@@ -17,7 +17,6 @@ public class Main {
 
         System.out.println(vowel("Hello"));
         System.out.println(check("sdfgh"));
-
     }
     
 }
