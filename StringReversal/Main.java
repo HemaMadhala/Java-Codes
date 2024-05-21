@@ -6,9 +6,7 @@ public class Main {
         String s="cho";
         System.out.println(s);
         System.out.println(reversal(s));
-
         System.out.println(rev2(s));
-        System.out.println("---------------");
         rev3(s);
 
     }
