@@ -6,7 +6,7 @@ public class NaturalNumbers {
         if(i==n+1){
             return;
         }
-        System.out.println(i);
+        System.out.print(i+ " ");
         printNumAsc(i+1, n);
     }
     public static void printNumDes(int i, int n){
@@ -14,7 +14,7 @@ public class NaturalNumbers {
             return;
         }
         printNumDes(i+1, n);
-        System.out.println(i);
+        System.out.print(i+" ");
     }
     
 }

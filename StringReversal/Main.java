@@ -8,6 +8,8 @@ public class Main {
         System.out.println(reversal(s));
         System.out.println(rev2(s));
         rev3(s);
+        System.out.println("--Recursion--");
+        Recursion.reverse(s, s.length()-1);
 
     }
     public static String reversal(String s) {
@@ -36,4 +38,5 @@ public class Main {
             System.out.print(stack.pop());
         }
     }
+
 }

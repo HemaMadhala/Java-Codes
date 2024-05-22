@@ -1,6 +1,6 @@
 package Recursion;
 
-public class Sum {
+public class Calc {
     public static void sumOfNaturalNumbers(int i, int n, int sum){
         if(i==n+1){
             System.out.println(sum);
@@ -9,5 +9,4 @@ public class Sum {
         sum+=i;
         sumOfNaturalNumbers(i+1, n, sum);
     }
-    
 }
