@@ -6,5 +6,6 @@ public class Main {
         System.out.println(PalindromeNumber.palindrome(121));
         System.out.println(PalindromeString.palindrome("AmanaplanacanalPanama"));
         System.out.println(PalindromeSentence.isPalindrome("A man, a plan, a canal: Panama"));
+        System.out.println(PalindromeSentence.isPalindrome("A man, a plan, a canal: Panama"));
     }
 }
