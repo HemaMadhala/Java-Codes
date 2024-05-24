@@ -1,15 +1,13 @@
 package PalindromePartitioning;
 
-import java.security.PublicKey;
-import java.util.ArrayList;
 import java.util.List;
 
 public class PalinPart {
 
-    public List<String> subSet(String s, int i, String newS){
+    public void subSet(String s, int i, String newS){
         if(i==s.length()){
             System.out.println(newS);
-            return;
+            return ;
         }
 
         char cur=s.charAt(i);
@@ -32,7 +30,7 @@ public class PalinPart {
         return true;
     }
     public List<List<String>> partition(String s) {
-        List<String> list =new ArrayList<>();
-        for(int i=0;i<)
+        return null;
+      
     }
 }
