@@ -1,7 +1,5 @@
 package occurance;
 
-import Recursion.fibonacci;
-
 public class Occurance {
      public static int[] searchRangeUsingBrute(int[] nums, int target) {
         int first=-1,last=-1;
@@ -27,10 +25,10 @@ public class Occurance {
                 last=mid;
 
                 while (mid>0 && nums[first-1]==target) {
-                    i--;
+                    first--;
                 }
-                while (mid<nums.length && nums[last+1]) {
-                    j++;
+                while (mid<nums.length && nums[last+1]==target) {
+                    last++;
                 }
             }
             else if(nums[mid]>target){
