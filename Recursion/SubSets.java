@@ -3,6 +3,8 @@ package Recursion;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
+import java.util.Collections;
+import java.util.HashSet;
 import java.util.List;
 
 public class SubSets {
@@ -35,6 +37,21 @@ public class SubSets {
         b.add(nums[i]);
         subsetofIntegers(nums, i+1, a, b);
         b.remove(b.size()-1);
+    }
+
+    public static void subsetWithoutDuplicates(int[] nums, int idx, HashSet<List<Integer>> subset, List<Integer> result){
+        if(nums.length==idx){
+            Collections.sort(result);
+            if(!subset.contains(result)){
+                subset.add(new ArrayList<>(result));
+            }
+            System.out.println(subset);
+            return;
+        }
+        subsetWithoutDuplicates(nums,idx+1,subset,result);
+        result.add(nums[idx]);
+        subsetWithoutDuplicates(nums,idx+1,subset,result);
+        result.remove(result.size()-1);
     }
 
 }
