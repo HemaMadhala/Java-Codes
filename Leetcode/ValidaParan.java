@@ -1,10 +1,9 @@
 package Leetcode;
 
-import java.util.Collections;
 import java.util.Stack;
 
 public class ValidaParan {
-    public static void main(String[] args) {
+    public void main(String[] args) {
         String s = "{[]}";
         ValidaParan v=new ValidaParan();
         System.out.println(v.isValid(s));

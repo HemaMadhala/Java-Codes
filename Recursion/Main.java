@@ -5,7 +5,7 @@ import java.util.HashSet;
 import java.util.List;
 
 public class Main {
-    public  void main(String[] args) {
+    public static void main(String[] args) {
         int arr[]={4,4,4,1,4};
         //NaturalNumbers.printNumAsc(0, 10);
         //NaturalNumbers.printNumDes(0, 10);
