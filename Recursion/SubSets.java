@@ -1,14 +1,15 @@
 package Recursion;
 
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collection;
 import java.util.Collections;
 import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
+
+import javax.swing.text.html.HTMLDocument.Iterator;
 
 public class SubSets {
-    public static void sub(String s, int idx, String newS){
+    public static String sub(String s, int idx, String newS){
         if(idx==s.length()){
             System.out.println(newS);
             return;
@@ -18,6 +19,18 @@ public class SubSets {
 
         sub(s, idx+1, newS+cur);
         sub(s, idx+1, newS);
+    }
+    public static String subs(String s, int idx, String newS){
+        if(idx==s.length()){
+            System.out.println(newS);
+            return newS;
+        }
+
+        char cur=s.charAt(idx);
+
+        sub(s, idx+1, newS+cur);
+        sub(s, idx+1, newS);
+
     }
 
     public static ArrayList<String> subArray(String s, int idx, ArrayList<String> newArray, String news){
@@ -52,6 +65,28 @@ public class SubSets {
         result.add(nums[idx]);
         subsetWithoutDuplicates(nums,idx+1,subset,result);
         result.remove(result.size()-1);
+    }
+
+    public static void substring(String s, int idx, String newString, Set<String> set){
+        if(s.length()==idx){
+            if(!set.contains(newString)){
+                set.add(newString);
+            }
+            return;
+        }
+        char curr=s.charAt(idx);
+
+        substring(s,idx+1, newString,set);
+        substring(s,idx+1,newString+curr,set);
+    }
+    public static int lengthOfLongestSubstring(String s) {
+        String longS="";
+        Set<String> set=new HashSet<>();
+
+        substring(s,0,"",set);
+        
+        int length= set.stream().map(String::length).max(Integer::compareTo).get();
+        return longS.length();
     }
 
 }

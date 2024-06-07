@@ -1,9 +1,6 @@
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 public class CommonChar {
     public static void main(String[] args) {
@@ -12,8 +9,6 @@ public class CommonChar {
     }
 
     public static List<String> commonChars(String[] words) {
-    
-        Map<String,Integer> map=new HashMap<>();
         int[] arr=new int[26];
         Arrays.fill(arr, Integer.MAX_VALUE);
         System.out.println(Arrays.toString(arr));
