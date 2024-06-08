@@ -25,7 +25,6 @@ public class Main {
         //List<List<Integer>> finalset=new ArrayList<>(set);
         //System.out.println("finalset");
         //System.out.println(finalset);
-        System.out.println(SubSets.lengthOfLongestSubstring(s));
     }
     
 }

@@ -1,8 +1,6 @@
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
 
-public class ReplaceWords {
+public class ReverseWords {
     public static void main(String[] args) {
         String s="  hello world  ";
         String s2= "a good   example";
