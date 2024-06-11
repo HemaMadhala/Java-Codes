@@ -1,4 +1,3 @@
-import java.lang.*;
 public class MergeStringAlter {
     public static void main(String[] args) {
         String word1 = "abcd", word2 = "pq";

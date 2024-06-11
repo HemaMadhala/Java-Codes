@@ -6,8 +6,8 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        int arr[]={4,4,4,1,4};
-        String s="abcabcbb";
+        //int arr[]={4,4,4,1,4};
+        //String s="abcabcbb";
         //NaturalNumbers.printNumAsc(0, 10);
         //NaturalNumbers.printNumDes(0, 10);
         //Calc.sumOfNaturalNumbers(0, 3, 0);
