@@ -30,17 +30,8 @@ public class ColComparator {
         stud.add(new Student(2, "kari"));
         stud.add(new Student(5,"hema"));
         stud.add(new Student(1,"spruha"));
-        Comparator<Student> com1=new Comparator<Student>() {
-
-            @Override
-            public int compare(Student i, Student j) {
-                if(i.id < j.id){
-                    return 1;
-                }
-                else return -1;
-            }
-            
-        };
+        Comparator<Student> com1= ( i,  j) ->  {return i.id<j.id ? 1: -1;
+    };
         Collections.sort(stud,com1);
         System.out.println(stud);
 
@@ -51,6 +42,7 @@ public class ColComparator {
 
         
         Collections.sort(names);
+        System.out.println(names);
     }
 }
 

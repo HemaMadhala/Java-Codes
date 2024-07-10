@@ -2,12 +2,17 @@ package Core;
 
 public class PrivateConst extends Const{
 
-    PrivateConst(){
-        super();
+    //PrivateConst(){
+        //super();
+    //}
+
+    PrivateConst(int i) {
+        super(i);
+        //TODO Auto-generated constructor stub
     }
 
     public static void main(String[] args) {
-        Const c=new PrivateConst();
+        Const c=new PrivateConst(0);
     }
 }
 
